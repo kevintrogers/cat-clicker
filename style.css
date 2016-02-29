@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+#name_tag{
+  font-family: serif;
+  background: #202020;
+  color:#fff;
+  text-align:center;
+  width:10%;
+  margin: auto;
+  
+}
+#name {
+  font-family: cursive;
+}
+#image_frame {
+   margin-left: 33.333333333%;
+  
+}
+#image_container img {
+
+  border-radius: 50%;
+  border: 5px solid dodgerblue;
+  height: auto;
+  width: auto;
+}
+.sidebar {
+     position: absolute;
+    top: 5em;
+    right: 1.5em;
+  text-align:center;
+  margin-right:1.5em;
+}
+
+#counter {
+  margin: 15em auto;
+  text-align: center;
+  background: #202020;
+  color: #fff;
+  width: 10em;
+  height: auto;
+}
+.badge {
+  float:none !important;
+}

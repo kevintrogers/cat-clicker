@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/ico" href="images/favicon.ico">
+  <link rel="styleSheet" href="style.css" type="text/css" media="screen">
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="main.ctrl.js"></script>
+
+    <script src="script.js"></script>
+    
+</head>
+<body ng-app="app" ng-controller="MainController as main">
+ 
+<h1> {{ main.title }} </h1>
+<div  id="name_tag">Hi! My Name is:<br>
+  <span id="name"></span>
+  </div>
+<button class="btn col-md-4 col-md-offset-4" id="image_frame">
+  
+<div id="image_container">
+</div>
+  </button>
+
+
+<div id="counter">
+  <span id="description">
+      Times Clicked:
+    </span><br>
+  <span id="click_number">
+      
+      <span>
+  </div>
+  <div class="col-xs-3 sidebar">
+  <h2>List of Cats</h2>
+  <ul class="list-group" >
+    <li class="list-group-item" ng-repeat="cat in main.cats"><button value= '{{ $index }}' class="badge">{{ $index + 1 }}) {{ cat.name }}</button></li>
+  </ul>
+</div>
+    
+  </body>
+ </html>
